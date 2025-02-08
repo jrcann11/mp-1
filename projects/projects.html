@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website showcasing Jessica Cannon's Online Resume">
+    <link type="text/css" rel="stylesheet" href="projects.css">
+    <script src="projects.js"></script>
+    <title>Projects | Resume</title>
+</head>
+
+<body>
+<div id="page-wrapper">
+
+    <!--Header starts-->
+    <header>
+        <h1>Jessica Cannon</h1>
+        <p>My Online Resume</p>
+    </header>
+    <!--Header end-->
+
+    <div id="container">
+        <!--Navigation Start-->
+        <nav>
+            <ul>
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../activities/activities.html">Activities</a></li>
+                <li><a href="../education/education.html">Education</a></li>
+                <li><a href="../experience/experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="../references/references.html">References</a></li>
+            </ul>
+        </nav>
+        <!--Navigation End-->
+
+        <!--Manin Content start-->
+        <main>
+            <h3 id="main-title">Projects</h3>
+            <ul id="project-list">
+                <li><a href="https://github.com/jrcann11/BlueBikes-Prediction-Model" target="_blank">BlueBikes Prediction
+                Model</a></li>
+                <li><a href="https://github.com/jrcann11/DL4DS_FinalProject" target="_blank">Sudan Agricultural
+                Advisor Chatbot</a></li>
+                <li><a href="https://github.com/jrcann11/sp2024_midterm" target="_blank">VizWiz Image
+                Captioning Algorithm</a></li>
+            </ul>
+
+            <!-- Calculator Section -->
+            <div class="calculator-container">
+                <h2>Calculator</h2>
+                <label for="first-number"></label>
+                <input type="text" id="first-number" class="calculator-input" placeholder="Enter first number">
+                <label for="second-number"></label>
+                <input type="text" id="second-number" class="calculator-input" placeholder="Enter second number">
+
+                <div class="calculator-buttons">
+                    <button class="calculator-button" onclick="addNumbers()">+</button>
+                    <button class="calculator-button" onclick="subtractNumbers()">-</button>
+                    <button class="calculator-button" onclick="multiplyNumbers()">*</button>
+                    <button class="calculator-button" onclick="divideNumbers()">/</button>
+                    <button class="calculator-button" onclick="powerNumbers()">^</button>
+                    <button class="calculator-button" onclick="clearFields()">Clear</button>
+                </div>
+
+                <h3 id="output" class="calculator-output">Result will appear here</h3>
+            </div>
+
+        </main>
+        <!--Main Content End-->
+    </div>
+
+    <!--Footer start-->
+    <footer>
+        <p>All Rights Reserved by Jessica Cannon <a href="../credits/credits.html"> Credits</a> &copy;</p>
+    </footer>
+    <!--Footer End-->
+</div>
+
+</body>
+</html>

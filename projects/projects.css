@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the page*/
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*Header starts*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: #003366; /* Dark Blue */
+    color: #ffffff; /* White */
+}
+/*Header ends*/
+
+/*Two column container starts:*/
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f8ff; /* Light Blue */
+}
+
+nav{
+    width: 30%;
+    height:150vh;
+    background-color: #00509e; /* Medium Blue */
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 3vw);
+    width: 90%;
+    background-color: #778899; /* Light Slate Grey */
+    padding: 2vh 0;
+    margin: 5vh auto;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #ffffff; /* White */
+    font-weight: bold;
+}
+
+body{
+    font-family: Cambria, serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    height:150vh;
+    background-color: #ffffff; /* White */
+    color: #003366; /* Dark Blue */
+}
+
+#project-list{
+    font-size: calc(2px + 2vw);
+    margin: auto;
+}
+
+#main-title{
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(8px + 3vw);
+    color: #00509e; /* Medium Blue */
+}
+
+/* Calculator Styling */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ADD8E6;
+    padding: 32px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: 48px auto;
+}
+
+/* Input Fields */
+.calculator-input {
+    width: 80%;
+    padding: 13px;
+    font-size: calc(8px + 1vw);
+    text-align: center;
+    border: 2px solid #00509e;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+/* Buttons */
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.calculator-button {
+    padding: 16px 24px;
+    font-size: calc(10px + 1vw);
+    font-weight: bold;
+    color: white;
+    background:  #778899; /* Light Slate Grey */
+    border: none;
+    border-radius: 10px;
+}
+
+/* Output Display */
+.calculator-output {
+    font-size: calc(16px + 1vw);
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: #003366;
+    padding: 16px;
+    margin-top: 24px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #003366; /* Dark Blue */
+    color: #ffffff; /* White */
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#time-date{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+footer a{
+    color: #ffffff; /* White */
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        align-items: center;
+    }
+
+    #container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+        height: revert;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li{
+        font-size: calc(2px + 1.5vw);
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100vh;
+    }
+
+    #main-title{
+        text-align: center;
+    }
+
+    #project-list{
+        font-size: calc(2px + 2vw);
+        margin: auto;
+    }
+
+    .calculator-container {
+        padding: 1.5rem;
+    }
+
+    .calculator-button {
+        padding: 0.8rem 1.2rem;
+        font-size: calc(8px + 2vw);
+    }
+}
